@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\agrishchenko\\.nuget\\packages\\": {}
+    "/Users/nastya/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\agrishchenko\\RiderProjects\\CurrencyBot\\DataAccessLayer.Abstraction\\DataAccessLayer.Abstraction.csproj",
+      "projectUniqueName": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Abstraction/DataAccessLayer.Abstraction.csproj",
       "projectName": "DataAccessLayer.Abstraction",
-      "projectPath": "C:\\Users\\agrishchenko\\RiderProjects\\CurrencyBot\\DataAccessLayer.Abstraction\\DataAccessLayer.Abstraction.csproj",
-      "packagesPath": "C:\\Users\\agrishchenko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\agrishchenko\\RiderProjects\\CurrencyBot\\DataAccessLayer.Abstraction\\obj\\",
+      "projectPath": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Abstraction/DataAccessLayer.Abstraction.csproj",
+      "packagesPath": "/Users/nastya/.nuget/packages/",
+      "outputPath": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Abstraction/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\agrishchenko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/nastya/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -50,13 +50,7 @@
           "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Users\\agrishchenko\\.dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }

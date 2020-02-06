@@ -5,8 +5,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Entities" />
-      <Folder Include="Enums" />
+      <PackageReference Include="AutoMapper" Version="9.0.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
       <Folder Include="MapperProfiles" />
     </ItemGroup>
 
