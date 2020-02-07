@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Implementation/DataAccessLayer.Implementation.csproj": {}
+    "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\DataAccessLayer.Implementation\\DataAccessLayer.Implementation.csproj": {}
   },
   "projects": {
-    "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Implementation/DataAccessLayer.Implementation.csproj": {
+    "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\DataAccessLayer.Implementation\\DataAccessLayer.Implementation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Implementation/DataAccessLayer.Implementation.csproj",
+        "projectUniqueName": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\DataAccessLayer.Implementation\\DataAccessLayer.Implementation.csproj",
         "projectName": "DataAccessLayer.Implementation",
-        "projectPath": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Implementation/DataAccessLayer.Implementation.csproj",
-        "packagesPath": "/Users/nastya/.nuget/packages/",
-        "outputPath": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Implementation/obj/",
+        "projectPath": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\DataAccessLayer.Implementation\\DataAccessLayer.Implementation.csproj",
+        "packagesPath": "C:\\Users\\agrishchenko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\DataAccessLayer.Implementation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nastya/.config/NuGet/NuGet.Config"
+          "C:\\Users\\agrishchenko\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -44,7 +44,13 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\agrishchenko\\.dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

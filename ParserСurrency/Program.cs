@@ -14,12 +14,26 @@ namespace ParserСurrency
         public static void Main()
         {
             Message[] messages = SearchMessage();
+            
+            //for
+            var selectedMessage = messages;
+            for (int i = 0; i == messages.Length; i++)
+            {
+                Message[] massage = selectedMessage.;
+                Console.WriteLine("{0}", massage); 
+                    
+            }
+            
+            //функциональный формат linq
+            //var selectedMessage = messages
+            //.Where(message => message.Text.ToLower().Contains("курс валют"));
 
-            var selectedMessage = from message in messages
-                where message.Text.ToLower().Contains("курс валют")
-                select message;
-            foreach (var massage in selectedMessage)
-                Console.WriteLine("{0}", massage);
+            //sql-ный формат linq
+            //var selectedMessage = from message in messages
+             //   where message.Text.ToLower().Contains("курс валют")
+              //  select message;
+             //foreach (var massage in selectedMessage)
+            //    Console.WriteLine("{0}", massage);
             
             //CreateHostBuilder(args).Build().Run();
 
