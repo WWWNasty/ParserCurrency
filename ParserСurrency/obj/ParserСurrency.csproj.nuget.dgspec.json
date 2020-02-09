@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\ParserСurrency\\ParserСurrency.csproj": {}
+    "/Users/nastya/gitlab/parser-currency/ParserСurrency/ParserСurrency.csproj": {}
   },
   "projects": {
-    "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\ParserСurrency\\ParserСurrency.csproj": {
+    "/Users/nastya/gitlab/parser-currency/ParserСurrency/ParserСurrency.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\ParserСurrency\\ParserСurrency.csproj",
+        "projectUniqueName": "/Users/nastya/gitlab/parser-currency/ParserСurrency/ParserСurrency.csproj",
         "projectName": "ParserСurrency",
-        "projectPath": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\ParserСurrency\\ParserСurrency.csproj",
-        "packagesPath": "C:\\Users\\agrishchenko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\ParserСurrency\\obj\\",
+        "projectPath": "/Users/nastya/gitlab/parser-currency/ParserСurrency/ParserСurrency.csproj",
+        "packagesPath": "/Users/nastya/.nuget/packages/",
+        "outputPath": "/Users/nastya/gitlab/parser-currency/ParserСurrency/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\agrishchenko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/nastya/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -44,16 +44,7 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Users\\agrishchenko\\.dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }

@@ -16,36 +16,38 @@ namespace ParserСurrency
             Message[] messages = SearchMessage();
             
             //for
-            var selectedMessage = messages;
-            for (int i = 0; i == messages.Length; i++)
+            for (int i = 0; i < messages.Length; i++)
             {
-                Message[] massage = selectedMessage.;
-                Console.WriteLine("{0}", massage); 
-                    
+                if (messages[i].Text.ToLower().Contains("курс валют"))
+                {
+                    Console.WriteLine("{0}", messages[i]);
+                }
             }
             
             //функциональный формат linq
             //var selectedMessage = messages
             //.Where(message => message.Text.ToLower().Contains("курс валют"));
+            //foreach (var massage in selectedMessage)
+            // Console.WriteLine("{0}", massage);
 
             //sql-ный формат linq
             //var selectedMessage = from message in messages
-             //   where message.Text.ToLower().Contains("курс валют")
-              //  select message;
+               // where message.Text.ToLower().Contains("курс валют")
+               // select message;
              //foreach (var massage in selectedMessage)
-            //    Console.WriteLine("{0}", massage);
+              //  Console.WriteLine("{0}", massage);
             
             //CreateHostBuilder(args).Build().Run();
 
 
-            foreach (var i in messages)
-            {
-                if (i.Text.ToLower().Contains("курс валют"))
-                {
-                    Console.WriteLine("{0} ", i);
-                }
+            //foreach (var i in messages)
+            //{
+             //   if (i.Text.ToLower().Contains("курс валют"))
+              //  {
+               //     Console.WriteLine("{0} ", i);
+               // }
                 
-            }
+            //}
         }
 
         
