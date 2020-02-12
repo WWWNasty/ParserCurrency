@@ -10,7 +10,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="MapperProfiles" />
+      <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.Objects\BusinessLogicLayer.Objects.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Objects/BusinessLogicLayer.Objects.csproj",
+    "projectUniqueName": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\BusinessLogicLayer\\BusinessLogicLayer.Objects\\BusinessLogicLayer.Objects.csproj",
     "projectName": "BusinessLogicLayer.Objects",
-    "projectPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Objects/BusinessLogicLayer.Objects.csproj",
-    "outputPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Objects/obj/",
+    "projectPath": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\BusinessLogicLayer\\BusinessLogicLayer.Objects\\BusinessLogicLayer.Objects.csproj",
+    "outputPath": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\BusinessLogicLayer\\BusinessLogicLayer.Objects\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
@@ -25,6 +25,12 @@
   },
   "frameworks": {
     "netcoreapp3.1": {
+      "dependencies": {
+        "Newtonsoft.Json": {
+          "target": "Package",
+          "version": "[12.0.3, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",
@@ -34,7 +40,13 @@
         "net48"
       ],
       "assetTargetFallback": true,
-      "warn": true
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "C:\\Users\\agrishchenko\\.dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
     }
   }
 }

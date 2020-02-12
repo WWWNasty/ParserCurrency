@@ -13,6 +13,6 @@ namespace DataAccessLayer.Models.Entities
 
         public double Value { get; set; }
 
-        public DateTime Date { get; set; }
+        //public DateTime Date { get; set; }
     }
 }

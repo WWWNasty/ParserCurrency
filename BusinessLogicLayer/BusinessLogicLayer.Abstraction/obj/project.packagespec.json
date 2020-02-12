@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Abstraction/BusinessLogicLayer.Abstraction.csproj",
+    "projectUniqueName": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\BusinessLogicLayer\\BusinessLogicLayer.Abstraction\\BusinessLogicLayer.Abstraction.csproj",
     "projectName": "BusinessLogicLayer.Abstraction",
-    "projectPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Abstraction/BusinessLogicLayer.Abstraction.csproj",
-    "outputPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Abstraction/obj/",
+    "projectPath": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\BusinessLogicLayer\\BusinessLogicLayer.Abstraction\\BusinessLogicLayer.Abstraction.csproj",
+    "outputPath": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\BusinessLogicLayer\\BusinessLogicLayer.Abstraction\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
@@ -14,7 +14,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\DataAccessLayer.Models\\DataAccessLayer.Models.csproj": {
+            "projectPath": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\DataAccessLayer.Models\\DataAccessLayer.Models.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -34,7 +38,13 @@
         "net48"
       ],
       "assetTargetFallback": true,
-      "warn": true
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "C:\\Users\\agrishchenko\\.dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
     }
   }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Abstraction/DataAccessLayer.Abstraction.csproj": {}
+    "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\DataAccessLayer.Abstraction\\DataAccessLayer.Abstraction.csproj": {}
   },
   "projects": {
-    "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Abstraction/DataAccessLayer.Abstraction.csproj": {
+    "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\DataAccessLayer.Abstraction\\DataAccessLayer.Abstraction.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Abstraction/DataAccessLayer.Abstraction.csproj",
+        "projectUniqueName": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\DataAccessLayer.Abstraction\\DataAccessLayer.Abstraction.csproj",
         "projectName": "DataAccessLayer.Abstraction",
-        "projectPath": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Abstraction/DataAccessLayer.Abstraction.csproj",
-        "packagesPath": "/Users/nastya/.nuget/packages/",
-        "outputPath": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Abstraction/obj/",
+        "projectPath": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\DataAccessLayer.Abstraction\\DataAccessLayer.Abstraction.csproj",
+        "packagesPath": "C:\\Users\\agrishchenko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\agrishchenko\\RiderProjects\\parser-currency\\DataAccessLayer.Abstraction\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nastya/.config/NuGet/NuGet.Config"
+          "C:\\Users\\agrishchenko\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -44,7 +44,13 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\agrishchenko\\.dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

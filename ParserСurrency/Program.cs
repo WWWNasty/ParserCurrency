@@ -11,18 +11,23 @@ namespace ParserСurrency
 {
     public class Program
     {
-        public static void Main()
+        public static void Main(string[] args)
         {
             Message[] messages = SearchMessage();
             
+            CreateHostBuilder(args).Build().Run();
+            
+            
             //for
+            /*
             for (int i = 0; i < messages.Length; i++)
             {
                 if (messages[i].Text.ToLower().Contains("курс валют"))
-                {
+               {
                     Console.WriteLine("{0}", messages[i]);
                 }
             }
+            */
             
             //функциональный формат linq
             //var selectedMessage = messages
@@ -36,11 +41,9 @@ namespace ParserСurrency
                // select message;
              //foreach (var massage in selectedMessage)
               //  Console.WriteLine("{0}", massage);
-            
-            //CreateHostBuilder(args).Build().Run();
 
 
-            //foreach (var i in messages)
+              //foreach (var i in messages)
             //{
              //   if (i.Text.ToLower().Contains("курс валют"))
               //  {
