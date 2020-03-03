@@ -4,6 +4,60 @@
     "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Implementation/BusinessLogicLayer.Implementation.csproj": {}
   },
   "projects": {
+    "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Abstraction/BusinessLogicLayer.Abstraction.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Abstraction/BusinessLogicLayer.Abstraction.csproj",
+        "projectName": "BusinessLogicLayer.Abstraction",
+        "projectPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Abstraction/BusinessLogicLayer.Abstraction.csproj",
+        "packagesPath": "/Users/nastya/.nuget/packages/",
+        "outputPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Abstraction/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nastya/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Models/DataAccessLayer.Models.csproj": {
+                "projectPath": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Models/DataAccessLayer.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Telegram.Bot": {
+              "target": "Package",
+              "version": "[15.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
     "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Implementation/BusinessLogicLayer.Implementation.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -12,6 +66,78 @@
         "projectPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Implementation/BusinessLogicLayer.Implementation.csproj",
         "packagesPath": "/Users/nastya/.nuget/packages/",
         "outputPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Implementation/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nastya/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Abstraction/BusinessLogicLayer.Abstraction.csproj": {
+                "projectPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Abstraction/BusinessLogicLayer.Abstraction.csproj"
+              },
+              "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Objects/BusinessLogicLayer.Objects.csproj": {
+                "projectPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Objects/BusinessLogicLayer.Objects.csproj"
+              },
+              "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Models/DataAccessLayer.Models.csproj": {
+                "projectPath": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Models/DataAccessLayer.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Flurl.Http": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Telegram.Bot": {
+              "target": "Package",
+              "version": "[15.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Objects/BusinessLogicLayer.Objects.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Objects/BusinessLogicLayer.Objects.csproj",
+        "projectName": "BusinessLogicLayer.Objects",
+        "projectPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Objects/BusinessLogicLayer.Objects.csproj",
+        "packagesPath": "/Users/nastya/.nuget/packages/",
+        "outputPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Objects/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nastya/.config/NuGet/NuGet.Config"
@@ -35,6 +161,70 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Models/DataAccessLayer.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Models/DataAccessLayer.Models.csproj",
+        "projectName": "DataAccessLayer.Models",
+        "projectPath": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Models/DataAccessLayer.Models.csproj",
+        "packagesPath": "/Users/nastya/.nuget/packages/",
+        "outputPath": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Models/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nastya/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Objects/BusinessLogicLayer.Objects.csproj": {
+                "projectPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Objects/BusinessLogicLayer.Objects.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

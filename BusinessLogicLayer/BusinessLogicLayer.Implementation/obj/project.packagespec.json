@@ -14,7 +14,17 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Abstraction/BusinessLogicLayer.Abstraction.csproj": {
+            "projectPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Abstraction/BusinessLogicLayer.Abstraction.csproj"
+          },
+          "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Objects/BusinessLogicLayer.Objects.csproj": {
+            "projectPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Objects/BusinessLogicLayer.Objects.csproj"
+          },
+          "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Models/DataAccessLayer.Models.csproj": {
+            "projectPath": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Models/DataAccessLayer.Models.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -25,6 +35,24 @@
   },
   "frameworks": {
     "netcoreapp3.1": {
+      "dependencies": {
+        "AutoMapper": {
+          "target": "Package",
+          "version": "[9.0.0, )"
+        },
+        "Flurl.Http": {
+          "target": "Package",
+          "version": "[2.4.2, )"
+        },
+        "Microsoft.Extensions.Configuration.Abstractions": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
+        "Telegram.Bot": {
+          "target": "Package",
+          "version": "[15.4.0, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",

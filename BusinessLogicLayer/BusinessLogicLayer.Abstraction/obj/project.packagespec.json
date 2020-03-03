@@ -14,7 +14,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Models/DataAccessLayer.Models.csproj": {
+            "projectPath": "/Users/nastya/gitlab/parser-currency/DataAccessLayer.Models/DataAccessLayer.Models.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -25,6 +29,12 @@
   },
   "frameworks": {
     "netcoreapp3.1": {
+      "dependencies": {
+        "Telegram.Bot": {
+          "target": "Package",
+          "version": "[15.4.0, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",

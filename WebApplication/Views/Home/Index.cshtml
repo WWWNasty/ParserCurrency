@@ -1,0 +1,26 @@
+﻿@using BusinessLogicLayer.Abstraction.Interfaces
+@Model BusinessLogicLayer.Objects.Dtos.Cbr
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="col-sm-6">
+        <div class="card" >
+            <div class="card-body">
+                <h5 class="card-title">Details</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Description</h6>
+                <p class="card-text">@Model.</p>
+                <h6 class="card-subtitle mb-2 text-muted">Start Date</h6>
+                <p class="card-text">@Model.StartDate</p>
+                <h6 class="card-subtitle mb-2 text-muted">Partisipants count</h6>
+                <p class="card-text">-</p>
+
+
+            </div>
+        </div>
+    </div>
+</div>

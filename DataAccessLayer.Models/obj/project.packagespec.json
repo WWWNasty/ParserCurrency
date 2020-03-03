@@ -14,7 +14,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Objects/BusinessLogicLayer.Objects.csproj": {
+            "projectPath": "/Users/nastya/gitlab/parser-currency/BusinessLogicLayer/BusinessLogicLayer.Objects/BusinessLogicLayer.Objects.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
