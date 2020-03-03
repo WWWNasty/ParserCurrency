@@ -2,7 +2,7 @@ namespace BusinessLogicLayer.Implementation.Services
 {
     public class TelegramSettings //https://core.telegram.org/bots/api
     {
-        public static string Url { get; set; }  = "http://telegram.me/ExchangeGoBot";
+        public static string Url { get; set; }  = "https://git.heroku.com/pursercurrancy.git";
 
         public static string Name { get; set; } = "ExchangeGoBot";
 
