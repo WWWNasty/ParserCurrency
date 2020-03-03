@@ -26,14 +26,14 @@ namespace BusinessLogicLayer.Implementation.Services.Commands
             var chatId = message.Chat.Id;
             var messageId = message.MessageId;
 
-            IEnumerable<CurrencyExchangeRate> exchangeRates = await _currencyProviderService.GetExchangeRateAsync();
-
-            string sendMessage = string.Empty;
-            
-            foreach (var exchangeRate in exchangeRates)
-            {
-                sendMessage += $"{exchangeRate.Name} {exchangeRate.Value}";
-            }
+//            IEnumerable<CurrencyExchangeRate> exchangeRates = await _currencyProviderService.GetExchangeRateAsync();
+//
+//            string sendMessage = string.Empty;
+//            
+//            foreach (var exchangeRate in exchangeRates)
+//            {
+//                sendMessage += $"{exchangeRate.Name} {exchangeRate.Value}";
+//            }
             
             await client.SendTextMessageAsync(chatId, "Hello!", replyToMessageId: messageId);
 
