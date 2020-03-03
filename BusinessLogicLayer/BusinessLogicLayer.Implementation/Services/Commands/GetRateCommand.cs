@@ -19,7 +19,7 @@ namespace BusinessLogicLayer.Implementation.Services.Commands
 
         }
 
-        public override string Name => "hello";
+        public override string Name => "hell";
         
         public override async void Execute(Message message, TelegramBotClient client)
         {
