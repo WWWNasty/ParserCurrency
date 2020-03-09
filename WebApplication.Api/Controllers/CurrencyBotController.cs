@@ -24,6 +24,7 @@ namespace WebApplication.Api.Controllers
             _telegramBotService = telegramBotService;
         }
 
+        [HttpPost]
         [Route(@"api/message/update")] //webhook uri part
         public async Task<OkResult> Update([FromBody]Update update)
         {
