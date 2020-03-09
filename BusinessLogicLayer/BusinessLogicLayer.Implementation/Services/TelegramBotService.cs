@@ -7,19 +7,17 @@ using Telegram.Bot;
 
 namespace BusinessLogicLayer.Implementation.Services
 {
-    public class TelegramBotService
+    public class TelegramBotService : ITelegramBotService
     {
-        private readonly IGetRateCommand _getRateCommand;
-        
         public TelegramBotService(IGetRateCommand getRateCommand)
         {
-            _getRateCommand = getRateCommand;
+            _commandsList = new List<IBaseCommand> {getRateCommand};
         }
         private  TelegramBotClient _client;
         private  List<IBaseCommand> _commandsList;
 
         public  IReadOnlyList<IBaseCommand> Commands => _commandsList.AsReadOnly();
-
+        
         public  async Task<TelegramBotClient> Get()
         {
             if (_client != null)
@@ -27,7 +25,6 @@ namespace BusinessLogicLayer.Implementation.Services
                 return _client;
             }
 
-            _commandsList = new List<IBaseCommand> {_getRateCommand};
             //TODO: Add more commands
 
             _client = new TelegramBotClient(TelegramSettings.Key);

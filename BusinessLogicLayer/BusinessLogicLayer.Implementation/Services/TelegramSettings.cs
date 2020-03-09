@@ -1,6 +1,6 @@
 namespace BusinessLogicLayer.Implementation.Services
 {
-    public class TelegramSettings //https://core.telegram.org/bots/api
+    public static class TelegramSettings //https://core.telegram.org/bots/api
     {
         public static string Url { get; set; }  = "https://git.heroku.com/pursercurrancy.git";
 

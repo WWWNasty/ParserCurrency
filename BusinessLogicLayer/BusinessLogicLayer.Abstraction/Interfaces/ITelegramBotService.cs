@@ -5,9 +5,9 @@ using Telegram.Bot;
 
 namespace BusinessLogicLayer.Abstraction.Interfaces
 {
-    public interface IBotService
+    public interface ITelegramBotService
     {
-        IReadOnlyList<IBaseCommand> Commands();
+        IReadOnlyList<IBaseCommand> Commands { get; }
 
         Task<TelegramBotClient> Get();
     }

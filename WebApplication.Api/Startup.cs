@@ -1,15 +1,16 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Reflection;
+using AutoMapper;
+using BusinessLogicLayer.Abstraction.Interfaces;
+using BusinessLogicLayer.Abstraction.Interfaces.Commands;
+using BusinessLogicLayer.Implementation.Services;
+using BusinessLogicLayer.Implementation.Services.Commands;
+using DataAccessLayer.Models.MapperProfiles;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace WebApplication.Api
 {
@@ -26,6 +27,11 @@ namespace WebApplication.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<ITelegramBotService, TelegramBotService>();
+            services.AddSingleton<ICurrencyProvider, CbrExchangeRateProviderService>();
+            services.AddSingleton<IGetRateCommand, GetRateCommand>();
+            services.AddAutoMapper(typeof(ExchangeRateMappingProfile));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
