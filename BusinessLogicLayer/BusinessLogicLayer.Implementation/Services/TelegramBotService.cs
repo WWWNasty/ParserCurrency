@@ -28,7 +28,7 @@ namespace BusinessLogicLayer.Implementation.Services
             //TODO: Add more commands
 
             _client = new TelegramBotClient(TelegramSettings.Key);
-            var hook = string.Format(TelegramSettings.Url, "api/message/update");
+            var hook = string.Format(TelegramSettings.UrlFormat, "api/message/update");
             await _client.SetWebhookAsync(hook);
 
             return _client;

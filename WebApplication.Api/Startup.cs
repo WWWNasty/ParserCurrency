@@ -49,6 +49,8 @@ namespace WebApplication.Api
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+
+            app.ApplicationServices.GetService<ITelegramBotService>().Get();
         }
     }
 }
