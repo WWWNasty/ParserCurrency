@@ -30,7 +30,8 @@ namespace WebApplication.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
+            
             services.AddSingleton<ITelegramBotService, TelegramBotService>();
             services.AddSingleton<ICurrencyProvider, CbrExchangeRateProviderService>();
             services.AddSingleton<IGetRateCommand, GetRateCommand>();
@@ -48,29 +49,32 @@ namespace WebApplication.Api
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            
+            
             app.UseAuthorization();
 
-            app.Use(async (context, next) =>
-            {
-                var logger = context.RequestServices.GetService<ILogger<TelegramBotClient>>();
-
-
-                Console.WriteLine(context.Request.Method);
-                Console.WriteLine(context.Request.GetTypedHeaders().ContentType.ToString());
-                
-                var result = new MemoryStream();
-
-                await context.Request.Body.CopyToAsync(result);
-
-                var body = Encoding.UTF8.GetString(result.ToArray());
-
-                Console.WriteLine(body);
-                //logger.LogInformation(string.Join(",", context.Request.ToKeyValuePairs()));
-
-
-                await next();
-            });
+//            app.Use(async (context, next) =>
+//            {
+//                var logger = context.RequestServices.GetService<ILogger<TelegramBotClient>>();
+//
+//
+//                Console.WriteLine(context.Request.Method);
+//                Console.WriteLine(context.Request.GetTypedHeaders().ContentType.ToString());
+//                
+//                var result = new MemoryStream();
+//
+//                await context.Request.Body.CopyToAsync(result);
+//
+//                context.Request.Body.Seek(0, SeekOrigin.Begin);
+//
+//                var body = Encoding.UTF8.GetString(result.ToArray());
+//
+//                Console.WriteLine(body);
+//                //logger.LogInformation(string.Join(",", context.Request.ToKeyValuePairs()));
+//
+//
+//                await next();
+//            });
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
