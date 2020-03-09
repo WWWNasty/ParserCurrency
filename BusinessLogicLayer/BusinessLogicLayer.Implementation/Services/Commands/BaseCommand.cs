@@ -12,7 +12,7 @@ namespace BusinessLogicLayer.Implementation.Services.Commands
 
         public bool Contains(string command)
         {
-            return command.Contains(this.Name) && command.Contains(TelegramSettings.Name);
+            return command.Contains(this.Name); //&& command.Contains(TelegramSettings.Name);
         }
     }
 }
